@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Njimoke Rane Soulemanou" />
+    <!-- links -->
+    <link rel="stylesheet" href="/App/CSS/main.css" />
+    <link rel="icon" href="/Images/stopwatch.png" type="images/x-icon" />
+    <title>CLOCK AND TIMER</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <header class="header boxBorder">
+          <div class="toggleBox">
+            <div class="toggle"></div>
+            <button class="toggleButton clockButton">Clock</button
+            ><button class="toggleButton timerButton">timer</button>
+          </div>
+        </header>
+        <footer class="footer boxBorder">
+          <p class="setDate">00/00/00</p>
+          <p class="setTimer">
+            <label aria-label="set minutes">
+              <input type="text" placeholder="Minutes..." class="setMinutes" />
+            </label>
+          </p>
+        </footer>
+      </div>
+      <main class="clock">
+        <p class="setClock">00:00:00 am</p>
+      </main>
+      <main class="timer">
+        <p class="setTimer">00:00</p>
+      </main>
+    </div>
+    <script src="/App/JS/main.js"></script>
+    <script src="/App/JS/date.js"></script>
+    <script src="/App/JS/clock.js"></script>
+    <script src="/App/JS/timer.js"></script>
+  </body>
+</html>

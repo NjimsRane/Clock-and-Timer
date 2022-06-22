@@ -1,0 +1,147 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+  outline:none;
+  border:none;
+}
+html{
+  font-size:62.5%;
+}
+body{
+  min-height:100vh;
+  width:100%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+.container{
+  position: relative;
+
+  width:100%;
+  max-width:35em;
+  height:23em;
+  background-color:rgb(3, 10, 19);
+
+  /* have to hide on slide from an other */
+  overflow: hidden;
+}
+.box{
+  position: relative;
+  width:100%;
+  height:100%;
+
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+
+ 
+}
+
+/* ***************
+    header and footer
+   ***************
+*/
+.boxBorder{
+  width:100%;
+  height:2em;
+  background-color:#333;
+}
+
+/* header section */
+.header{
+  height:4em;
+}
+.toggleBox{
+  position: relative;
+ 
+  height:100%;
+  width:100%;
+
+  display:flex;
+  justify-content: center;
+
+ 
+}
+.toggleButton{
+  position: relative;
+  height:100%;
+  width:100%;
+  
+  padding-inline:2em;
+  background: none;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-family:consolas,sans-serif;
+  font-size: 1.6rem;
+  
+  color:#fff;
+
+  cursor: pointer;
+}
+.toggle{
+  position:absolute;
+ 
+  height:100%;
+  width:50%;
+  left:0;
+  
+  border-bottom:3px solid white;
+
+  transition: .5s;
+}
+/* footer section */
+
+.footer{
+  display:flex;
+  align-items:center;
+  padding-inline:1em;
+  color:white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.3rem;
+  transition: .5s;
+}
+/* we have to hide the minutes input first to only show white timer button is clicked
+*/
+.setMinutes{
+  display:none;
+  background:none;
+  color:white;
+}
+main{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+
+  width:100%;
+  text-align: center;
+  font-family:consolas,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  color:teal;
+
+  /* have to add margin to be able to slide between clock and timer */
+
+  margin-left:17em;
+  transition: .5s;
+}
+.setClock{
+  font-size: 5rem;
+}
+.setTimer{
+  font-size:7rem;
+  
+}
+
+/* to be able to slide  */
+.timer{
+  left: 450px;
+}
+.clock{
+  left:0;
+}
+
